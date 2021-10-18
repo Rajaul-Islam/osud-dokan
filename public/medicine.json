@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Galvus Met 50/500",
+    "generics": "Novartis(Bangladesh) Limited",
+    "price": 30.4,
+    "introduction": "This tablet is indicated as an adjunct to diet and exercises to improve glycaemic control in patients with type 2 diabetes mellitus whose diabetes is not adequately controlled on Metformin Hydrochloride or Vildagliptin alone or who are already treated with the combination of Vildagliptin and Metformin Hydrochloride, as separate tablets",
+    "img": "https://i.ibb.co/p1yNCCL/galvus.webp"
+  },
+  {
+    "name": "Comet 500",
+    "generics": "Metformin Hydrochloride 500mg",
+    "price": 5.7,
+    "introduction": "Treatment of type 2 diabetes mellitus, especially in overweight people, when food and exercise alone are unable to provide appropriate glycemic control.Metformin can be used alone or in conjunction with other oral antidiabetic drugs or insulin in adults.Metformin can be taken alone or in conjunction with insulin in children and adolescents as young as ten years old.In overweight type 2 diabetes adult patients treated with metformin as first-line treatment following diet failure, there was a decrease in diabetic complications.",
+    "img": "https://i.ibb.co/rtbpLj9/comet.webp"
+  },
+  {
+    "name": "Napa Extra",
+    "generics": "Beximco Pharmaceuticals Ltd",
+    "price": 2.38,
+    "introduction": "Fever, common cold, and influenza, headache, toothache, earache, bodyache, myalgia, neuralgia, dysmenorrhoea, sprains, colic pain, back pain, post-operative pain, postpartum discomfort, inflammatory pain, and post vaccination pain in children are among the conditions for which paracetamol is prescribed. It's also used to treat rheumatic and osteoarthritic pain, as well as joint stiffness.",
+    "img": "https://i.ibb.co/Y0GcdfZ/napa-extra.webp"
+  },
+  {
+    "name": "Linatab M 2.5/500",
+    "generics": "Incepta Pharmaceuticals Ltd",
+    "price": 11.4,
+    "introduction": "When treatment with both Linagliptin and Metformin Hydrochloride is suitable, this is suggested as an addition to diet and exercise to enhance glycemic control in individuals with type 2 diabetes mellitus.",
+    "img": "https://i.ibb.co/L504fPm/losectil.webp"
+  },
+  {
+    "name": "Dialiptin-M 500",
+    "generics": "Drug International Limited",
+    "price": 11.4,
+    "introduction": "Patients with type 2 diabetes mellitus who are not adequately controlled on Metformin Hydrochloride or Vildagliptin alone, or who are already treated with the combination of Vildagliptin and Metformin Hydrochloride as separate tablets, should take this tablet as an adjunct to diet and exercise to improve glycaemic control.",
+    "img": "https://i.ibb.co/FJtgrSD/dialiptin.webp"
+  },
+  {
+    "name": "Seclo 20",
+    "generics": "Square Pharmaceuticals Limited",
+    "price": 7.4,
+    "introduction": "Omeprazole is used to treat the following conditions ,Duodenal and gastric ulcers,Duodenal and stomach ulcers caused by NSAIDs,As a preventative measure in individuals with a history of NSAID-related duodenal and stomach ulcers. GERD is an abbreviation for gastroesophageal reflux disease.Long-term acid reflux disease management",
+    "img": "https://i.ibb.co/MV7syzc/seclo.webp"
+  },
+  {
+    "name": "Brodil 4",
+    "generics": "ACI Limited",
+    "price": 0.44,
+    "introduction": "Salbutamol is indicated as a bronchodilator for use in Asthma, Chronic Bronchitis, Emphysema, and other conditions associated with airways obstruction.",
+    "img": "https://i.ibb.co/SKzxS50/mrodil.webp"
+  }
+]
