@@ -16,6 +16,13 @@ const useFirebase = () => {
     const [password, setPassword] = useState("")
     const [name,setName]=useState('')
 
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            setError('');
+        },5000)
+    },[error])
+
     // google signup
     const signInWithGoogle = () => {
         signInWithPopup(auth, GoogleProvider)
