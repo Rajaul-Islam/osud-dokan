@@ -1,5 +1,5 @@
 import firebaseInitialize from "../firebase/firebase.init";
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword,updateProfile,FacebookAuthProvider } from "firebase/auth";
 import { useEffect, useState } from "react";
 firebaseInitialize();
 
@@ -7,12 +7,14 @@ firebaseInitialize();
 const auth = getAuth();
 
 const GoogleProvider = new GoogleAuthProvider();
+const FacebookProvider = new FacebookAuthProvider();
 
 const useFirebase = () => {
     const [user, setUser] = useState({})
     const [error, setError] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState("")
+    const [name,setName]=useState('')
 
     // google signup
     const signInWithGoogle = () => {
@@ -27,7 +29,22 @@ const useFirebase = () => {
             })
 
     }
-    // username and password 
+
+
+    // facebook signin
+    const signInWithFacebook = () => {
+        signInWithPopup(auth,FacebookProvider)
+            .then(result => {
+                setUser(result.user)
+                console.log(result.user);
+
+            })
+            .catch((error) => {
+                setError(error.message)
+            })
+
+    }
+    // sign in with and password 
     const signInWithEmail = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
@@ -42,6 +59,24 @@ const useFirebase = () => {
             })
 
     }
+    //update user name
+         const updateName=()=>{
+            updateProfile(auth.currentUser, {
+                displayName:name
+              }).then(() => {
+                
+              }).catch((error) => {
+               setError(error.message)
+              });
+         }
+
+//get username
+const getName=e=>{
+    const name=e?.target?.value
+    setName(name);
+    console.log(name);
+}
+
 
     // get email 
     const getEmail = e => {
@@ -103,7 +138,9 @@ const useFirebase = () => {
         signInWithEmail,
         getEmail,
         getPassword,
-        signUp
+        signUp,
+        getName,
+        signInWithFacebook
 
 
     };

@@ -8,7 +8,7 @@ import useFirebase from '../../Hook/useFirebase';
 
 const Login = () => {
 
-    const { signInWithGoogle, error, signInWithEmail, getEmail,
+    const {signInWithFacebook,signInWithGoogle, error, signInWithEmail, getEmail,
         getPassword } = useAuth()
     return (
         <div>
@@ -71,6 +71,7 @@ const Login = () => {
             <p className="mt-3">Or</p>
             <p> Login with</p>
             <button onClick={signInWithGoogle}>Google Signin</button>
+            <button onClick={signInWithFacebook}>Facebook Signin</button>
         </div>
     );
 };
