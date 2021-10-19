@@ -4,7 +4,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './Footer.css'
-
+import ssl from "../../images/sslCommerz-images.webp";
 const Footer = () => {
     return (
         <div className="text-white">
@@ -12,26 +12,22 @@ const Footer = () => {
           <Container>
             <Row>
               <Col md={6}>
-                <div className="text-center my-2">
-                  {/* <img width="120px" src={footerLogo} alt="" /> */}
-                  <h1>this is an image</h1>
-                </div>
-  
-                <ul className="list-unstyled">
+                
+                <ul className="list-unstyled mt-5">
                   <li>
                     <FontAwesomeIcon icon={faMapMarkerAlt} />
-                    <span className="ms-1 fs-5">Naogaon,Rajshahi,Bangladesh</span>
+                    <span className="ms-1 fs-5">Dhanmondi,Dhaka,Bangladesh</span>
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faEnvelope} />
                     <span className="ms-1 fs-5">
-                      Official: coding.club.pro@gmail.com
+                      Official: osuddokan@gmail.com
                     </span>
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faPhone} />
                     <span className="ms-1 fs-5">
-                      Helpline: 01763251119(Available:10:00AM to 10.00PM)
+                      Helpline: 001121445187(Available:10:00AM to 10.00PM)
                     </span>
                   </li>
                 </ul>
@@ -44,25 +40,23 @@ const Footer = () => {
                   <li>
                     <NavLink to="/about">About us</NavLink>
                   </li>
+                  
                   <li>
-                    <NavLink to="/contact">Contact us</NavLink>
+                    <NavLink to="">Courses</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/courses">Courses</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/policy">Policy</NavLink>
+                    <NavLink to="">Policy</NavLink>
                   </li>
                 </ul>
               </Col>
               <Col md={4}>
                 <div className="">
-                  {/* <img
+                  <img
                     className="img-fluid"
-                    src={payment}
+                    src={ssl}
                     alt="payment methods"
-                  /> */}
-                  <h1>Tshi is on image</h1>
+                  />
+                  
                 </div>
               </Col>
             </Row>
@@ -70,7 +64,7 @@ const Footer = () => {
         </div>
         <hr className="m-0 p-0" />
         <p className="text-center m-0 py-3 copyright">
-          Copyright © All Reserved by Coding Club pro - programming Community in
+          Copyright © All Reserved by Osud Dokan in
           2021
         </p>
       </div>

@@ -25,30 +25,15 @@ const useFirebase = () => {
 
     // google signup
     const signInWithGoogle = () => {
-        signInWithPopup(auth, GoogleProvider)
-            .then(result => {
-                setUser(result.user)
-                console.log(result.user);
-
-            })
-            .catch((error) => {
-                setError(error.message)
-            })
-
+       return signInWithPopup(auth, GoogleProvider)
+           
     }
 
 
     // facebook signin
     const signInWithFacebook = () => {
-        signInWithPopup(auth,FacebookProvider)
-            .then(result => {
-                setUser(result.user)
-                console.log(result.user);
-
-            })
-            .catch((error) => {
-                setError(error.message)
-            })
+      return signInWithPopup(auth,FacebookProvider)
+          
 
     }
     // sign in with and password 
@@ -56,9 +41,11 @@ const useFirebase = () => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-                setUser(result.user)
+                setUser(result.user);
                 console.log(result.user);
-                alert('loged in successfully')
+                setUserName();
+                alert('user log in successfully')
+               
 
             })
             .catch((error) => {
@@ -67,10 +54,10 @@ const useFirebase = () => {
 
     }
     //update user name
-         const updateName=()=>{
+         const setUserName=()=>{
             updateProfile(auth.currentUser, {
                 displayName:name
-              }).then(() => {
+              }).then(result => {
                 
               }).catch((error) => {
                setError(error.message)
@@ -147,7 +134,10 @@ const getName=e=>{
         getPassword,
         signUp,
         getName,
-        signInWithFacebook
+        setError,
+        setUser,
+        signInWithFacebook,
+        setUserName
 
 
     };

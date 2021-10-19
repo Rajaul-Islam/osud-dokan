@@ -11,8 +11,8 @@ const SignUp = () => {
         getPassword, getName } = allContext;
 
     return (
-        <div>
-            <h2>Please Login</h2>
+        <div className='container text-center'>
+            <h2>Please Sign UP</h2>
             <p>SignUp with Email & Password</p>
             <p>{error}</p>
             <Form onSubmit={signUp}>
@@ -76,7 +76,7 @@ const SignUp = () => {
                         </InputGroup>
                     </Col>
                 </Row>
-                <button type="submit" className="btn btn-primary mt-2 w-100">
+                <button type="submit" className="btn btn-primary mt-2 px-5">
                     Sign up
                 </button>
             </Form>
@@ -85,9 +85,6 @@ const SignUp = () => {
                     Already have an account? Please Log In!
                 </NavLink>
                 <br />
-                <NavLink className="text-decoration-none" to="/reset">
-                    Forget password? Reset!
-                </NavLink>
             </p>
 
         </div>

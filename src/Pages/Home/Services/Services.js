@@ -34,11 +34,8 @@ const Services = ({medicine}) => {
                     </Card.Body>
                     <Card.Body className='d-flex'>
                     <Link to={`/service/${id}`}>
-                    <Button className='text-center w-100 mx-5' variant="success">Details</Button>
+                    <Button className='text-center w-50 mx-5' variant="success">Details</Button>
                     </Link>
-
-
-                    <Button className='text-center  mx-5' variant="success">Add To Cart</Button>
                     </Card.Body>
                     
                 </Card>
