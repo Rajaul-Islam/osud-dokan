@@ -11,7 +11,7 @@ const SignUp = () => {
         getPassword, getName } = allContext;
 
     return (
-        <div className='container text-center'>
+        <div className='container text-center my-5 p-4'>
             <h2>Please Sign UP</h2>
             <p>SignUp with Email & Password</p>
             <p>{error}</p>

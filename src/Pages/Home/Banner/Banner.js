@@ -19,9 +19,9 @@ const Banner = () => {
                         src={banner1}
                         alt="First slide"
                     />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <Carousel.Caption className='text-success font-bold'>
+                        <h3>Hope for a better tomorrow.</h3>
+                        <p>We know you. We care for you. We’re with you</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={500}>
@@ -31,9 +31,9 @@ const Banner = () => {
                         src={banner2}
                         alt="Second slide"
                     />
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <Carousel.Caption className='text-success'>
+                        <h3>In Love with Life.</h3>
+                        <p>Instantly notify your doctor of any health problems.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -43,8 +43,8 @@ const Banner = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption className='text-success'>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>A commitment to community.</h3>
+                        <p>Get the best healthcare experience, without having to leave home </p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

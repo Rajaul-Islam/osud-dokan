@@ -7,15 +7,15 @@
   }
   
   .gradient {
-    background: rgb(104, 77, 250);
+    background: rgb(17, 4, 93);
     background: linear-gradient(
       0deg,
-      rgba(104, 77, 250, 1) 0%,
-      rgba(96, 31, 233, 1) 100%
+      rgb(31, 10, 146) 0%,
+      rgb(51, 24, 110) 100%
     );
   }
   .copyright {
-    background-color: #684cfa;
+    background-color: #14084e;
   }
   
   .dropdown-menu.show {

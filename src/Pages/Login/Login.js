@@ -16,7 +16,7 @@ const Login = () => {
     const { signInWithFacebook, signInWithGoogle, error, signInWithEmail, getEmail,
         getPassword, setError, setUser,setUserName } = allContext;
     return (
-        <div className='container text-center my-5'>
+        <div className='container text-center my-4'>
             <h2>Please Login</h2>
             <p>Login with Email & Password</p>
             <p>{error}</p>

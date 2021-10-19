@@ -1,9 +1,9 @@
 import React from 'react';
-
+import notfound from "../../images/404.7cd5b768.png";
 const NotFound = () => {
     return (
         <div>
-            404 not found
+           <img className='img-fluid' src={notfound} alt="" />
         </div>
     );
 };

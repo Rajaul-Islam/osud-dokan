@@ -18,23 +18,24 @@ const Header = () => {
         <div className='header'>
             <Navbar expand="lg">
                 <Container>
-                    <Navbar.Brand className='text-white' href="#home">Osud Dokan</Navbar.Brand>
+                    <Navbar.Brand as={NavLink} to='/home' className='text-white'>Osud Dokan</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
-                            <Nav.Link as={NavLink} to="/about">About</Nav.Link>
+                            <Nav.Link className='text-white' as={NavLink} to="/home">Home</Nav.Link>
+                            <Nav.Link className='text-white' as={NavLink} to="/about">About</Nav.Link>
+                            <Nav.Link className='text-white' as={NavLink} to="/freeservice">Free Service</Nav.Link>
 
                             {
-                                user?.displayName ? <Nav.Link onClick={logOut}> hello! {user?.displayName} {" "}Logout</Nav.Link> :
+                                user?.displayName ? <Nav.Link className='text-white' onClick={logOut}> hello! {user?.displayName} {" "}Logout</Nav.Link> :
                                     <>
-                                        <Nav.Link as={NavLink} to="/signup">Sign Up </Nav.Link>
-                                        <Nav.Link as={NavLink} to="/login">Login</Nav.Link>
+                                        <Nav.Link className='text-white' as={NavLink} to="/signup">Sign Up </Nav.Link >
+                                        <Nav.Link className='text-white' as={NavLink} to="/login">Login</Nav.Link>
                                     </>
 
 
                             }
-                            <Nav.Link href="#link"><FontAwesomeIcon icon={faShoppingCart} />
+                            <Nav.Link as={NavLink} to='/cart'><FontAwesomeIcon icon={faShoppingCart} />
                                 <Badge className='text-white' bg="secondary">0</Badge></Nav.Link>
 
                         </Nav>

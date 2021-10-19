@@ -10,16 +10,7 @@ const Service = () => {
     const { serviceId } = useParams();
     console.log(serviceId)
     const { medicines } = useAuth()
-    // const [medicines, setMedicines] = useState([])
-
-    // useEffect(() => {
-    //     fetch('medicine.json')
-    //         .then(rsc => rsc.json())
-    //         .then(data => {
-    //             setMedicines(data)
-    //             console.log(data);
-    //         })
-    // }, [])
+   
 
 const findService=medicines.find(medicine=>medicine.id=== Number(serviceId))
 console.log(medicines);

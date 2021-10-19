@@ -18,6 +18,9 @@ import AuthProvider from './Context/AuthProvider';
 import Service from './Pages/Home/Service/Service';
 import Services from './Pages/Home/Services/Services';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import FreeService from './Pages/FreeService/FreeService';
+import Panding from './Pages/Panding/Panding';
+import Cart from './Pages/Cart/Cart';
 
 
 function App() {
@@ -40,6 +43,9 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
+            <Route path='/freeservice'>
+            <FreeService></FreeService>
+            </Route>
 
             <Route path='/signup'>
               <SignUp></SignUp>
@@ -52,6 +58,14 @@ function App() {
 
             <PrivateRoute path='/service/:serviceId'>
               <Service></Service>
+            </PrivateRoute>
+
+
+            <PrivateRoute exact path='/pending'>
+              <Panding></Panding>
+            </PrivateRoute>
+            <PrivateRoute exact path='/cart'>
+              <Cart></Cart>
             </PrivateRoute>
 
 

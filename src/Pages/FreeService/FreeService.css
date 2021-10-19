@@ -1,0 +1,23 @@
+.delivery{
+    background-image: url(../../images/freeservice/delivery-service-new.png);
+    text-align: center;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+}
+.online{
+    background-image: url(../../images/freeservice/online-doctor.png);
+    text-align: center;
+   
+   
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+}
+.call{
+    background-image: url(../../images/freeservice/call-center.png);
+    text-align: center;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+}
