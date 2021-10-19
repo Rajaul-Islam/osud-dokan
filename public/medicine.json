@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Galvus Met 50/500",
     "generics": "Novartis(Bangladesh) Limited",
     "price": 30.4,
@@ -7,6 +8,7 @@
     "img": "https://i.ibb.co/p1yNCCL/galvus.webp"
   },
   {
+    "id": 2,
     "name": "Comet 500",
     "generics": "Metformin Hydrochloride 500mg",
     "price": 5.7,
@@ -14,6 +16,7 @@
     "img": "https://i.ibb.co/rtbpLj9/comet.webp"
   },
   {
+    "id": 3,
     "name": "Napa Extra",
     "generics": "Beximco Pharmaceuticals Ltd",
     "price": 2.38,
@@ -21,6 +24,7 @@
     "img": "https://i.ibb.co/Y0GcdfZ/napa-extra.webp"
   },
   {
+    "id": 4,
     "name": "Linatab M 2.5/500",
     "generics": "Incepta Pharmaceuticals Ltd",
     "price": 11.4,
@@ -28,6 +32,7 @@
     "img": "https://i.ibb.co/L504fPm/losectil.webp"
   },
   {
+    "id": 5,
     "name": "Dialiptin-M 500",
     "generics": "Drug International Limited",
     "price": 11.4,
@@ -35,6 +40,7 @@
     "img": "https://i.ibb.co/FJtgrSD/dialiptin.webp"
   },
   {
+    "id": 6,
     "name": "Seclo 20",
     "generics": "Square Pharmaceuticals Limited",
     "price": 7.4,
@@ -42,6 +48,7 @@
     "img": "https://i.ibb.co/MV7syzc/seclo.webp"
   },
   {
+    "id": 7,
     "name": "Brodil 4",
     "generics": "ACI Limited",
     "price": 0.44,

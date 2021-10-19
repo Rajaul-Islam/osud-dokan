@@ -12,7 +12,8 @@ import useAuth from '../../Hook/useAuth';
 
 
 const Header = () => {
-    const { user, logOut } = useAuth()
+    const {allContext}=useAuth()
+    const { user, logOut } = allContext;
     return (
         <div className='header'>
             <Navbar expand="lg">

@@ -2,14 +2,19 @@ import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col, Form, FormControl, InputGroup, Row } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink,useLocation,useHistory } from 'react-router-dom';
 import useAuth from '../../Hook/useAuth';
 import useFirebase from '../../Hook/useFirebase';
 
 const Login = () => {
+    const {allContext}=useAuth();
+    const history=useHistory()
+    const location=useLocation();
+    const redirect=location?.state?.from;
+
 
     const {signInWithFacebook,signInWithGoogle, error, signInWithEmail, getEmail,
-        getPassword } = useAuth()
+        getPassword } = allContext;
     return (
         <div>
             <h2>Please Login</h2>

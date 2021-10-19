@@ -15,11 +15,14 @@ import SignUp from './Pages/SignUp/SignUp';
 import About from './Pages/About/About';
 import Footer from './Shared/Footer/Footer';
 import AuthProvider from './Context/AuthProvider';
+import Service from './Pages/Home/Service/Service';
+import Services from './Pages/Home/Services/Services';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 
 function App() {
   return (
-    <div >
+    <div  className='app'>
       <AuthProvider>
         <Router>
           <Header>
@@ -37,9 +40,19 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
+
             <Route path='/signup'>
               <SignUp></SignUp>
             </Route>
+
+            <Route exact path='/service'>
+              <Services></Services>
+            </Route>
+
+
+            <PrivateRoute path='/service/:serviceId'>
+              <Service></Service>
+            </PrivateRoute>
 
 
 

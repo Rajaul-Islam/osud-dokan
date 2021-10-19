@@ -6,8 +6,10 @@ import { Col, Form, FormControl, InputGroup, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../Hook/useAuth';
 const SignUp = () => {
-    const { signUp, signInWithGoogle, error, getEmail,
-        getPassword, getName } = useAuth()
+    const {allContext}=useAuth()
+    const { signUp, error, getEmail,
+        getPassword, getName } = allContext;
+
     return (
         <div>
             <h2>Please Login</h2>
